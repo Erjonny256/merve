@@ -1,229 +1,264 @@
-<!-- GitHub Pages yeniden yayınlama -->
-!DOCTYPE html
-html lang=tr
-head
-  meta charset=UTF-8 
-  meta name=viewport content=width=device-width, initial-scale=1.0 
-  titleİyi ki Doğdun Merve 💖title
-  link rel=stylesheet href=style.css 
-head
-body
-  div id=celebration-layer aria-hidden=truediv
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Merve için hazırlanan özel doğum günü sürprizi." />
+  <title>İyi ki Doğdun Merve 💖</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="celebration-layer" aria-hidden="true"></div>
 
-  div class=bg-shapes
-    span class=shape shape1span
-    span class=shape shape2span
-    span class=shape shape3span
-    span class=shape shape4span
-  div
+  <div class="bg-shapes" aria-hidden="true">
+    <span class="shape shape1"></span>
+    <span class="shape shape2"></span>
+    <span class="shape shape3"></span>
+    <span class="shape shape4"></span>
+  </div>
 
-  main class=app
-    !-- 1. EKRAN  HEDİYE KUTUSU --
-    section class=screen active intro-screen id=screen-0
-      div class=card intro-card
-        p class=eyebrowMerve’ye özel mini bir sürpriz 🎀p
-        div class=gift-box-wrap
-          div class=gift-box
-            div class=gift-liddiv
-            div class=gift-ribbon verticaldiv
-            div class=gift-ribbon horizontaldiv
-            div class=gift-bow🎀div
-          div
-        div
-        h1Doğum günü hediyen hazırh1
-        p class=lead
+  <main class="app">
+    <!-- 1. EKRAN / HEDİYE KUTUSU -->
+    <section class="screen active intro-screen" id="screen-0">
+      <div class="card intro-card">
+        <p class="eyebrow">Merve’ye özel mini bir sürpriz 🎀</p>
+
+        <div class="gift-box-wrap">
+          <div class="gift-box">
+            <div class="gift-lid"></div>
+            <div class="gift-ribbon vertical"></div>
+            <div class="gift-ribbon horizontal"></div>
+            <div class="gift-bow">🎀</div>
+          </div>
+        </div>
+
+        <h1>Doğum günü hediyen hazır</h1>
+
+        <p class="lead">
           İçinde bol sevgi, biraz kahkaha, biraz kahve, biraz yoga ve
           çokça “iyi ki varsın” var.
-        p
-        button class=primary-btn id=openGiftBtnHediyen için tıkla 🎁button
-      div
-    section
+        </p>
 
-    !-- 2. EKRAN  DOĞUM GÜNÜ KARŞILAMA --
-    section class=screen id=screen-1
-      div class=card hero-card
-        p class=eyebrowBugünün yıldızı sensin ✨p
-        h2İyi ki doğdun Merve! 🎂h2
-        p class=lead
+        <button class="primary-btn" id="openGiftBtn" type="button">
+          Hediyen için tıkla 🎁
+        </button>
+      </div>
+    </section>
+
+    <!-- 2. EKRAN / DOĞUM GÜNÜ KARŞILAMA -->
+    <section class="screen" id="screen-1">
+      <div class="card hero-card">
+        <p class="eyebrow">Bugünün yıldızı sensin ✨</p>
+
+        <h2>İyi ki doğdun Merve! 🎂</h2>
+
+        <p class="lead">
           Hayatı daha güzel, daha komik ve daha sıcak yapan insanlardan birisin.
-          Bugün senin günün ve bu küçük site de sana kocaman bir sarılma gibi gelsin istedim. 💕
-        p
+          Bugün senin günün ve bu küçük site de sana kocaman bir sarılma gibi
+          gelsin istedim. 💕
+        </p>
 
-        div class=mini-badges
-          span💖 Samimiyetspan
-          span☕ Kahvespan
-          span🧘 Yogaspan
-          span🎉 Bol Kahkahaspan
-        div
+        <div class="mini-badges">
+          <span>💖 Samimiyet</span>
+          <span>☕ Kahve</span>
+          <span>🧘 Yoga</span>
+          <span>🎉 Bol Kahkaha</span>
+        </div>
 
-        div class=quote-box
+        <div class="quote-box">
           “Beni her zaman destekleyen, her zaman yanımda olan canım arkadaşım…
           İyi ki hayatımdasın.”
-        div
-      div
-    section
+        </div>
+      </div>
+    </section>
 
-    !-- 3. EKRAN  FOTOĞRAF + VİDEO --
-    section class=screen id=screen-2
-      div class=card media-card
-        p class=eyebrowBizden anılar 📸p
-        h2Bir fotoğraf, bir video, bir sürü güzel hish2
+    <!-- 3. EKRAN / FOTOĞRAF + VİDEO -->
+    <section class="screen" id="screen-2">
+      <div class="card media-card">
+        <p class="eyebrow">Bizden anılar 📸</p>
+        <h2>Bir fotoğraf, bir video, bir sürü güzel his</h2>
 
-        div class=media-grid
-          div class=media-item
-            img src=assetsimagesmerve-photo.jpg alt=Merve ile özel bir fotoğraf 
-            p
-              Bu kare bile tek başına yeterli
-              strongiki yakın arkadaş, bol sevgi ve güzel enerji.strong
-            p
-          div
+        <div class="media-grid">
+          <div class="media-item">
+            <img
+              src="merve-photo.jpg"
+              alt="Merve ile özel bir fotoğraf"
+            />
 
-          div class=media-item
-            video controls preload=metadata
-              source src=assetsvideosmerve-merve.mp4 type=videomp4 
+            <p>
+              Bu kare bile tek başına yeterli:
+              <strong>iki yakın arkadaş, bol sevgi ve güzel enerji.</strong>
+            </p>
+          </div>
+
+          <div class="media-item">
+            <video controls preload="metadata">
+              <source src="merve-merve.mp4" type="video/mp4" />
               Tarayıcın video oynatmayı desteklemiyor.
-            video
-            p
-              Bu video da bonusumuz olsun
-              stronggülümsemelik, tatlılık ve “iyi ki sen” enerjisi.strong
-            p
-          div
-        div
-      div
-    section
+            </video>
 
-    !-- 4. EKRAN  YOGA + KAHVE + DESTEK --
-    section class=screen id=screen-3
-      div class=card
-        p class=eyebrowMerve denince akla gelenler 💫p
-        h2Seninle hayatın özetih2
+            <p>
+              Bu video da bonusumuz olsun:
+              <strong>gülümsemelik, tatlılık ve “iyi ki sen” enerjisi.</strong>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        div class=features-grid
-          div class=feature-box
-            div class=icon🧘div
-            h3Yoga ruhuh3
-            p
-              Senin enerjinde ayrı bir huzur var. Yoga gibi;
-              sakinleştirici, toparlayıcı ve “tamam ya, hallederiz” dedirten bir yanın var.
-            p
-          div
+    <!-- 4. EKRAN / YOGA + KAHVE + DESTEK -->
+    <section class="screen" id="screen-3">
+      <div class="card">
+        <p class="eyebrow">Merve denince akla gelenler 💫</p>
+        <h2>Seninle hayatın özeti</h2>
 
-          div class=feature-box
-            div class=icon☕div
-            h3Türk kahvesi partnerih3
-            p
-              Seninle içilen Türk kahvesi sadece kahve olmuyor;
-              yanında sohbet, fal, dert çözümü, kahkaha ve bazen gereksiz ama çok keyifli analizler de geliyor.
-            p
-          div
+        <div class="features-grid">
+          <div class="feature-box">
+            <div class="icon">🧘</div>
+            <h3>Yoga ruhu</h3>
 
-          div class=feature-box
-            div class=icon💞div
-            h3Destek hattı 724h3
-            p
+            <p>
+              Senin enerjinde ayrı bir huzur var. Yoga gibi; sakinleştirici,
+              toparlayıcı ve “tamam ya, hallederiz” dedirten bir yanın var.
+            </p>
+          </div>
+
+          <div class="feature-box">
+            <div class="icon">☕</div>
+            <h3>Türk kahvesi partneri</h3>
+
+            <p>
+              Seninle içilen Türk kahvesi sadece kahve olmuyor; yanında sohbet,
+              fal, dert çözümü, kahkaha ve bazen gereksiz ama çok keyifli
+              analizler de geliyor.
+            </p>
+          </div>
+
+          <div class="feature-box">
+            <div class="icon">💞</div>
+            <h3>Destek hattı 7/24</h3>
+
+            <p>
               Beni her zaman destekleyen, her zaman yanımda olan canım arkadaşım…
               İyi günümde de kötü günümde de kalbini hep hissettirdin.
-            p
-          div
-        div
-      div
-    section
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    !-- 5. EKRAN  KOMİKLİKLER --
-    section class=screen id=screen-4
-      div class=card
-        p class=eyebrowBiraz da gerçekler konuşulsun 😄p
-        h2Merve hakkında resmi olmayan ama çok doğru bilgilerh2
+    <!-- 5. EKRAN / KOMİKLİKLER -->
+    <section class="screen" id="screen-4">
+      <div class="card">
+        <p class="eyebrow">Biraz da gerçekler konuşulsun 😄</p>
+        <h2>Merve hakkında resmi olmayan ama çok doğru bilgiler</h2>
 
-        div class=fun-list
-          div class=fun-item
-            span class=fun-emoji😂span
-            p
-              Moral bozukluğunu toparlama süresi
-              strongMerve ile bir konuşma kadar kısa.strong
-            p
-          div
+        <div class="fun-list">
+          <div class="fun-item">
+            <span class="fun-emoji">😂</span>
+            <p>
+              Moral bozukluğunu toparlama süresi:
+              <strong>Merve ile bir konuşma kadar kısa.</strong>
+            </p>
+          </div>
 
-          div class=fun-item
-            span class=fun-emoji☕span
-            p
-              Türk kahvesi içildiyse olay artık sadece kahve değildir;
-              o masa mini terapi seansına dönüşür.
-            p
-          div
+          <div class="fun-item">
+            <span class="fun-emoji">☕</span>
+            <p>
+              Türk kahvesi içildiyse olay artık sadece kahve değildir; o masa
+              mini terapi seansına dönüşür.
+            </p>
+          </div>
 
-          div class=fun-item
-            span class=fun-emoji🧘‍♀️span
-            p
-              Yoga yapan insan huzurlu olur derler, ama sen hem huzurlu
-              hem de gerektiğinde çok komik olmayı başarıyorsun.
-            p
-          div
+          <div class="fun-item">
+            <span class="fun-emoji">🧘‍♀️</span>
+            <p>
+              Yoga yapan insan huzurlu olur derler, ama sen hem huzurlu hem de
+              gerektiğinde çok komik olmayı başarıyorsun.
+            </p>
+          </div>
 
-          div class=fun-item
-            span class=fun-emoji💌span
-            p
-              Arkadaşlık tanımı güncellendi
+          <div class="fun-item">
+            <span class="fun-emoji">💌</span>
+            <p>
+              Arkadaşlık tanımı güncellendi:
               “Merve seviyesi destekleyici, içten ve kalp yumuşatan arkadaş.”
-            p
-          div
+            </p>
+          </div>
 
-          div class=fun-item
-            span class=fun-emoji👑span
-            p
-              Bugünün kararı
-              strongDoğum günü güzelliği + kahve güzelliği + arkadaşlık güzelliği = Merve.strong
-            p
-          div
-        div
-      div
-    section
+          <div class="fun-item">
+            <span class="fun-emoji">👑</span>
+            <p>
+              Bugünün kararı:
+              <strong>
+                Doğum günü güzelliği + kahve güzelliği + arkadaşlık güzelliği
+                = Merve.
+              </strong>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    !-- 6. EKRAN  DUYGUSAL FİNAL --
-    section class=screen id=screen-5
-      div class=card final-card
-        p class=eyebrowFinal ama en kalpten kısmı 💖p
-        h2Canım arkadaşım, iyi ki varsınh2
+    <!-- 6. EKRAN / DUYGUSAL FİNAL -->
+    <section class="screen" id="screen-5">
+      <div class="card final-card">
+        <p class="eyebrow">Final ama en kalpten kısmı 💖</p>
+        <h2>Canım arkadaşım, iyi ki varsın</h2>
 
-        div class=letter
-          p
+        <div class="letter">
+          <p>
             İyi ki doğdun Merve. İyi ki hayatımda senin gibi içten, güçlü,
             sevgi dolu ve güzel kalpli bir arkadaş var.
-          p
-          p
+          </p>
+
+          <p>
             Beni her zaman destekleyen, her zaman yanımda olan canım arkadaşım;
-            varlığın bazen bir kahve kadar sıcak, bazen bir sarılma kadar iyi geliyor.
-          p
-          p
+            varlığın bazen bir kahve kadar sıcak, bazen bir sarılma kadar iyi
+            geliyor.
+          </p>
+
+          <p>
             Seninle gülmek, sohbet etmek, saçma şeylere bile kahkaha atmak,
             dertleşmek ve hayatı paylaşmak çok kıymetli.
-          p
-          p
-            Yeni yaşın sana sağlık, huzur, neşe, bol kahkaha, kalbin kadar güzel insanlar
-            ve gönlünden geçen en güzel şeyleri getirsin.
-          p
-          p
-            Kısacası… strongiyi ki sen.strong 💕
-          p
-        div
+          </p>
 
-        button class=primary-btn id=wishBtnBir dilek tut ✨button
+          <p>
+            Yeni yaşın sana sağlık, huzur, neşe, bol kahkaha, kalbin kadar güzel
+            insanlar ve gönlünden geçen en güzel şeyleri getirsin.
+          </p>
 
-        div class=hidden-message id=hiddenMessage
-          p🎂 Dilek onaylandı!p
-          pBu yıl da çok mutlu ol, çok gül, çok sev ve hep ışığınla parlamaya devam et. 💗p
-        div
-      div
-    section
+          <p>Kısacası… <strong>iyi ki sen.</strong> 💕</p>
+        </div>
 
-    !-- ALT KONTROLLER --
-    div class=nav-controls id=navControls
-      button class=nav-btn secondary-btn id=prevBtn← Geributton
-      div class=progress-dots id=progressDotsdiv
-      button class=nav-btn primary-btn small id=nextBtnSonraki Sayfa →button
-    div
-  main
+        <button class="primary-btn" id="wishBtn" type="button">
+          Bir dilek tut ✨
+        </button>
 
-  script src=script.jsscript
-body
-html
+        <div class="hidden-message" id="hiddenMessage">
+          <p>🎂 Dilek onaylandı!</p>
+          <p>
+            Bu yıl da çok mutlu ol, çok gül, çok sev ve hep ışığınla parlamaya
+            devam et. 💗
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ALT KONTROLLER -->
+    <div class="nav-controls" id="navControls">
+      <button class="nav-btn secondary-btn" id="prevBtn" type="button">
+        ← Geri
+      </button>
+
+      <div class="progress-dots" id="progressDots"></div>
+
+      <button class="nav-btn primary-btn small" id="nextBtn" type="button">
+        Sonraki Sayfa →
+      </button>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
